@@ -33,13 +33,15 @@ a:hover {
 }
 
 .wrap {
-  max-width: 1180px;
+  max-width: 1210px;
+  padding: 0 15px;
   width: 100%;
   margin: 0 auto;
 }
 
 .header {
   position: absolute;
+  z-index: 10;
   top: 0;
   left: 0;
   width: 100%;
@@ -101,10 +103,40 @@ a:hover {
 .hero-section {
   background: url(../img/bg.png) no-repeat center/cover;
   padding: 307px 0 465px 0;
+  position: relative;
 }
 .hero-section__content {
   max-width: 647px;
   width: 100%;
+  z-index: 1;
+  position: relative;
+}
+.hero-section__decor {
+  position: absolute;
+}
+.hero-section__decor_tr {
+  width: 170px;
+  height: 175px;
+  top: 0;
+  right: 0;
+}
+.hero-section__decor_br {
+  width: 195.651px;
+  height: 201.405px;
+  bottom: 88px;
+  right: 0px;
+}
+.hero-section__decor_tl {
+  width: 195.651px;
+  height: 201.405px;
+  top: 240px;
+  left: 0;
+}
+.hero-section__decor_bl {
+  width: 275px;
+  height: 286px;
+  bottom: 0;
+  left: 0;
 }
 
 .text-block__btn-add {
@@ -148,4 +180,81 @@ a:hover {
   font-style: normal;
   font-weight: 500;
   line-height: 152%;
+}
+
+.catalog {
+  position: relative;
+}
+.catalog__title {
+  text-align: center;
+  color: #2E363E;
+  font-feature-settings: "clig" off, "liga" off;
+  /* Заголовки / 48 px, Medium */
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 60px;
+  /* 125% */
+  letter-spacing: -1px;
+  margin-bottom: 80px;
+}
+.catalog__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+.catalog__decor {
+  position: absolute;
+}
+.catalog__decor_tl {
+  top: 350px;
+  left: 214px;
+}
+.catalog__decor_bl {
+  left: 252px;
+  bottom: 170px;
+}
+.catalog__decor_tr {
+  right: 236px;
+  bottom: 734px;
+}
+
+.item-catalog {
+  max-width: 380px;
+  color: #2E363E;
+  font-family: Montserrat;
+}
+.item-catalog__body {
+  padding: 50px 44px;
+}
+.item-catalog__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 143%;
+  margin-bottom: 12px;
+}
+.item-catalog__desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 24px;
+}
+.item-catalog__price {
+  color: #434B53;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 150%;
+  margin-bottom: 14px;
+}
+.item-catalog__btn {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 152%;
+  padding: 20px 40px;
+  border-radius: 8px;
+  background: #FED84C;
+  display: inline-block;
 }/*# sourceMappingURL=styles.css.map */
