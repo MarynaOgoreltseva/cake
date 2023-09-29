@@ -245,4 +245,30 @@ a:hover {
   border-radius: 8px;
   background: #FED84C;
   display: inline-block;
+}
+
+.content {
+  background: #081130;
+}
+.content__bg-top-img {
+  background: lightgray 50%/cover no-repeat;
+  background-color: #081130;
+}
+.content__bg-bottom-img {
+  background: lightgray 50%/cover no-repeat;
+  background-color: #081130;
+  margin-top: -403px;
+}
+.content__body {
+  display: flex;
+}
+.content__text-block {
+  flex: 0 0 50%;
+  margin: 109px 0 0 84px;
+}
+.content__text-block.text-block {
+  max-width: 500px;
+}
+.content__picture {
+  flex: 0 0 50%;
 }/*# sourceMappingURL=styles.css.map */

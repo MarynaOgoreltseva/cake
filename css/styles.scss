@@ -257,3 +257,31 @@ a {
     }
 }
 
+.content {
+    background: #081130;
+    &__bg-top-img {
+        background: lightgray 50% / cover no-repeat;
+        background-color: #081130;
+    }
+    &__bg-bottom-img {
+        background: lightgray 50% / cover no-repeat;  
+        background-color: #081130;
+            margin-top: -403px;
+    }
+    &__body {
+        display: flex;
+        // justify-content: center;
+    }
+    &__text-block {
+        flex: 0 0 50%;
+        margin: 109px 0 0 84px;
+        
+        &.text-block {
+            max-width: 500px;
+        }
+    }
+    &__picture {
+        flex: 0 0 50%;
+    }
+}
+
