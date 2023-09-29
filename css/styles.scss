@@ -64,26 +64,15 @@ a {
         flex-wrap: wrap;
         gap: 70px;
     }
-    &__adress-block {
-        background: url(../img/map.svg) no-repeat top left;
-        padding: 0 0 0 29px;
-        max-width: 151px;
-    }
-    &__contact-block {
-        background: url(../img/tel.svg) no-repeat top left;
-        padding: 0 0 0 51px;
-        max-width: 231px;
-    }
-    &__link-contact {}
-    &__contact {
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 152%;
-    }
-    &__desc {
-        font-size: 13px;
-        font-weight: 400;
-        line-height: 150%;
+}
+
+.contact-block {
+    &__text {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 143%;
     }
 }
 
