@@ -304,10 +304,10 @@ a:hover {
 
 .about__content {
   display: flex;
+  flex-wrap: wrap;
 }
 .about__text-block {
   flex: 0 1 50%;
-  margin: 97px 0;
 }
 .about__woman {
   flex: 0 1 50%;
@@ -315,13 +315,15 @@ a:hover {
 
 .woman {
   position: relative;
+  max-width: 580px;
+  height: 804px;
 }
 .woman::after, .woman::before {
   position: absolute;
   padding: 15px;
   font-family: Montserrat;
   border-radius: 5px;
-  left: -20px;
+  left: -15px;
   z-index: 4;
 }
 .woman::after {
@@ -353,7 +355,7 @@ a:hover {
   height: 652px;
 }
 .woman__pic_nonos {
-  bottom: 62px;
+  bottom: 42px;
   left: 50px;
   z-index: 2;
   width: 487px;
@@ -368,4 +370,23 @@ a:hover {
   height: 580px;
   bottom: 0;
   left: 0;
+}
+
+@media screen and (max-width: 1110px) {
+  .catalog__list {
+    justify-content: center;
+  }
+  .content__text-block {
+    padding: 139px 0 139px 84px;
+  }
+  .about__content {
+    gap: 30px;
+    justify-content: center;
+  }
+  .about__text-block {
+    flex: 0 1 100%;
+  }
+  .about__woman {
+    flex: 0 1 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */
