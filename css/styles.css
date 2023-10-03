@@ -33,7 +33,7 @@ a:hover {
 }
 
 .wrap {
-  max-width: 1210px;
+  max-width: 1215px;
   padding: 0 15px;
   width: 100%;
   margin: 0 auto;
@@ -305,9 +305,15 @@ a:hover {
 .about__content {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 14px;
 }
 .about__text-block {
   flex: 0 1 50%;
+  margin: 97px 0;
+}
+.about__text-block .text-block__list {
+  width: 438px;
 }
 .about__woman {
   flex: 0 1 50%;
@@ -316,6 +322,7 @@ a:hover {
 .woman {
   position: relative;
   max-width: 580px;
+  width: 100%;
   height: 804px;
 }
 .woman::after, .woman::before {
@@ -342,6 +349,7 @@ a:hover {
   font-size: 24px;
   font-weight: 500;
   background-color: #2E363E;
+  color: #FFF;
   top: 60%;
 }
 .woman__pic {
@@ -366,15 +374,142 @@ a:hover {
   position: absolute;
   border-radius: 580px;
   background: #FED84C;
-  width: 580px;
+  max-width: 580px;
+  width: 100%;
   height: 580px;
   bottom: 0;
   left: 0;
 }
 
-@media screen and (max-width: 1110px) {
+.comment {
+  background: #081130;
+}
+.comment__content {
+  background: #081130;
+}
+.comment__title {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: -1px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+.comment__body {
+  padding: 70px 143px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 54px;
+  border-radius: 5px;
+  border: 2px solid #E2EAF2;
+  background: #FFF;
+  box-shadow: 2px 8px 16px 0px rgba(194, 198, 208, 0.06);
+  margin-bottom: 70px;
+}
+.comment__review {
+  max-width: 460px;
+}
+.comment__pic {
+  margin-bottom: 30px;
+}
+.comment__user-name {
+  color: #2E363E;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 143%;
+  margin-bottom: 6px;
+}
+.comment__user-city {
+  color: #A6AEB6;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+}
+.comment__arrow-list {
+  text-align: center;
+  padding-bottom: 24px;
+}
+
+.review-comment {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.review-comment__title {
+  color: #2E363E;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 143%;
+}
+.review-comment__text-desc {
+  color: #2E363E;
+  /* Текст / 15px, regular (170%) */
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+  /* 25.5px */
+}
+.review-comment__text-link {
+  color: #4A94FF;
+  /* Текст / 14px, Regular */
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.review-comment__text-link:hover {
+  color: #081130;
+}
+
+.gallery {
+  text-align: center;
+  color: #2E363E;
+  font-family: Montserrat;
+}
+.gallery__title {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: -1px;
+  margin-bottom: 14px;
+}
+.gallery__subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 143%;
+  margin-bottom: 80px;
+}
+.gallery__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  justify-content: center;
+  list-style: none;
+}
+
+@media screen and (max-width: 1024px) {
   .catalog__list {
     justify-content: center;
+  }
+  .about__content {
+    justify-content: center;
+  }
+  .about__text-block .text-block__list {
+    width: 100%;
   }
   .content__text-block {
     padding: 139px 0 139px 84px;
@@ -388,6 +523,9 @@ a:hover {
   }
   .about__woman {
     flex: 0 1 100%;
+  }
+  .about__woman .woman__ellipse {
+    left: -40px;
   }
 }
 @media screen and (max-width: 1110px) {

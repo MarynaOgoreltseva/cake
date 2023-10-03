@@ -32,7 +32,7 @@ a {
 }
 
 .wrap {
-    max-width: 1210px;
+    max-width: 1215px;
     padding: 0 15px;
     width: 100%;
     margin: 0 auto;
@@ -316,23 +316,31 @@ a {
     &__content {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 14px;
         // flex-direction: column-reverse;
         // gap: 20px;
     }
     &__text-block {
         flex: 0 1 50%;
-        // margin: 97px 0;
+        margin: 97px 0;
         // max-width: 580px;
+        // width: 100%;
+        & .text-block__list {
+            width: 438px;
+        }
     }
     &__woman {
         flex: 0 1 50%;  
         // max-width: 580px;
+        // width: 100%;
     }
 }
 
 .woman {
     position: relative;
     max-width: 580px;
+    width: 100%;
     height: 804px;
     &::after,
     &::before {
@@ -358,6 +366,7 @@ a {
         font-size: 24px;
         font-weight: 500;
         background-color: #2E363E;
+        color: #FFF;
         top: 60%;
         }
     &__pic {
@@ -382,7 +391,8 @@ a {
         position: absolute;
         border-radius: 580px;
         background: #FED84C;
-        width: 580px;
+        max-width: 580px;
+        width: 100%;
         height: 580px;
         bottom: 0;
         left: 0;
@@ -390,10 +400,161 @@ a {
     
 }
 
-@media screen and (max-width: 1110px) {
+.comment {
+    background: #081130;
+
+    &__content {
+        background: #081130;
+    }
+
+    &__title {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 60px;
+        letter-spacing: -1px;
+        margin-bottom: 80px;
+        text-align: center;
+    }
+
+    &__body {
+        padding: 70px 143px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 54px;
+        border-radius: 5px;
+        border: 2px solid #E2EAF2;
+        background: #FFF;
+        box-shadow: 2px 8px 16px 0px rgba(194, 198, 208, 0.06);
+        margin-bottom: 70px;
+    }
+
+    &__review {
+        max-width: 460px;
+    }
+
+    &__pic {
+        margin-bottom: 30px;
+        // max-width: 380px;
+    }
+
+    &__user-name {
+        color: #2E363E;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 143%;
+        margin-bottom: 6px;
+    }
+
+    &__user-city {
+        color: #A6AEB6;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 170%;
+    }
+
+    &__arrow-list {
+        text-align: center;
+        padding-bottom: 24px;
+    }
+
+    // &__arrow-item {
+    //     width: 66px;
+    //     height: 66px;
+    //     background-color: #FED84C;
+    //     border-radius: 50%;
+    //     position: relative;
+        
+    // }
+           
+}
+
+.review-comment {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &__title {
+        color: #2E363E;
+        font-family: Montserrat;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 143%;
+    }
+
+    &__text-desc {
+        color: #2E363E;
+        /* Текст / 15px, regular (170%) */
+        font-family: Montserrat;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 170%;
+        /* 25.5px */
+    }
+
+    &__text-link {
+        color: #4A94FF;
+        /* Текст / 14px, Regular */
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+
+        &:hover {
+            color: #081130;
+        }
+    }
+}
+
+.gallery {
+    text-align: center;
+    color: #2E363E;
+    font-family: Montserrat;
+    &__title {
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 60px;
+        letter-spacing: -1px;
+        margin-bottom: 14px;
+    }
+    &__subtitle {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 143%;
+        margin-bottom: 80px;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+        justify-content: center;
+        list-style: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
     .catalog {
         &__list {
             justify-content: center;
+        }
+    }
+    .about {
+        &__content {
+            justify-content: center;
+        }
+        &__text-block .text-block__list {
+            width: 100%;
         }
     }
 
@@ -411,9 +572,14 @@ a {
     }
     &__woman {
         flex: 0 1 100%;
+        & .woman__ellipse {
+            left: -40px;
+        }
     }
 }
 }
+
+
 
 @media screen and (max-width: 1110px) {
     .woman {
