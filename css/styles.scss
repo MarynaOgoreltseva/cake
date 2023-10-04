@@ -31,6 +31,22 @@ a {
     color: inherit;
 }
 
+.title {
+    font-family: Montserrat;
+    &_xl {
+        font-size: 48px;
+        font-weight: 700;
+    }
+    &_l {
+        font-size: 48px;
+        font-weight: 500;
+    }
+    &_m {
+        font-size: 36px;
+        font-weight: 700;
+    }
+}
+
 .wrap {
     max-width: 1215px;
     padding: 0 15px;
@@ -73,12 +89,6 @@ a {
         font-size: 21px;
         font-weight: 500;
         line-height: 143%;
-    }
-}
-
-.title {
-    &_big {
-        
     }
 }
 
@@ -125,6 +135,9 @@ a {
 .text-block {
     font-family: Montserrat;
     color: #FFF;
+    &_color {
+            color: #2E363E;
+        }
     &__btn-add {
         display: inline-block;
         padding: 10px 18px;
@@ -141,11 +154,11 @@ a {
     }
     &__title {
         margin-bottom: 24px;
-        font-size: 48px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 60px;
-        letter-spacing: -1px;
+        // font-size: 48px;
+        // font-style: normal;
+        // font-weight: 700;
+        // line-height: 60px;
+        // letter-spacing: -1px;
     }
     &__desc {
         font-family: Montserrat;
@@ -167,9 +180,6 @@ a {
         font-style: normal;
         font-weight: 500;
         line-height: 152%;
-    }
-    &_color {
-        color: #2E363E;
     }
     &__list {
         display: flex;
@@ -203,14 +213,7 @@ a {
     &__title {
         text-align: center;
         color: #2E363E;
-        font-feature-settings: 'clig' off, 'liga' off;
-        /* Заголовки / 48 px, Medium */
-        font-family: Montserrat;
-        font-size: 48px;
-        font-style: normal;
-        font-weight: 500;
         line-height: 60px;
-        /* 125% */
         letter-spacing: -1px;
         margin-bottom: 80px;
     }
@@ -296,19 +299,25 @@ a {
     }
     &__body {
         display: flex;
+        flex-wrap: wrap;
         z-index: 5;
         position: relative;
+        padding-top: 15%;
+        align-items: center;
+        justify-content: center;
     }
     &__text-block {
-        flex: 0 1 50%;
-        padding: 439px 0 459px 84px;
+        // flex: 0 1 50%;
+        // padding: 439px 0 459px 84px;
         & .text-block {
-            max-width: 500px;
+            max-width: 481px;
+            width: 100%;
         }
     }
     &__picture {
-        flex: 0 1 50%;
-        background: url(../img/content/phone.png) no-repeat center/contain;
+        // flex: 0 1 50%;
+        max-width: 481px;
+        // background: url(../img/content/phone.png) no-repeat center/contain;
     }
 }
 
@@ -409,10 +418,6 @@ a {
 
     &__title {
         color: #FFF;
-        font-family: Montserrat;
-        font-size: 48px;
-        font-style: normal;
-        font-weight: 500;
         line-height: 60px;
         letter-spacing: -1px;
         margin-bottom: 80px;
@@ -523,8 +528,6 @@ a {
     font-family: Montserrat;
     
     &__title {
-        font-size: 48px;
-        font-weight: 500;
         line-height: 60px;
         letter-spacing: -1px;
         margin-bottom: 14px;
@@ -540,6 +543,11 @@ a {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+    &__item-link {
+        &:hover {
+            border-radius: 5px;
+        }
+    }
 }
 
 .order {
@@ -553,8 +561,6 @@ a {
         background:  #FFF;
     }
     &__title {
-        font-size: 36px;
-        font-weight: 700;
         line-height: 133%;
         margin-bottom: 12px;
     }
@@ -650,9 +656,7 @@ a {
         }
     }
 
-.content__text-block {
-    padding: 139px 0 139px 84px;
-}
+
 .about {
     &__content{
         gap: 30px;
@@ -686,5 +690,47 @@ a {
         &::before {
             left: 0px;
         }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+            font-family: Montserrat;
+            &_xl {
+                font-size: 36px;
+                font-weight: 700;
+            }
+    
+            &_l {
+                font-size: 36px;
+                font-weight: 500;
+            }
+    
+            &_m {
+                font-size: 30px;
+                font-weight: 700;
+            }
+        }
+    .contact-block {
+        & svg {
+                width: 20px;
+                    height: 20px;
+        }
+        &__text {
+            font-size: 15px;
+        }
+    }
+    .content__text-block .text-block {
+        max-width: unset;
+    }
+    .text-block {
+        text-align: center;
+    }
+    .hero-section {
+        padding: 200px 0;
+        &__content {
+        max-width: 500px;
+        margin: 0 auto; 
+        }       
     }
 }

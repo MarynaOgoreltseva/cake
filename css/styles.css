@@ -32,6 +32,22 @@ a:hover {
   text-decoration: underline;
 }
 
+.title {
+  font-family: Montserrat;
+}
+.title_xl {
+  font-size: 48px;
+  font-weight: 700;
+}
+.title_l {
+  font-size: 48px;
+  font-weight: 500;
+}
+.title_m {
+  font-size: 36px;
+  font-weight: 700;
+}
+
 .wrap {
   max-width: 1215px;
   padding: 0 15px;
@@ -118,6 +134,9 @@ a:hover {
   font-family: Montserrat;
   color: #FFF;
 }
+.text-block_color {
+  color: #2E363E;
+}
 .text-block__btn-add {
   display: inline-block;
   padding: 10px 18px;
@@ -134,11 +153,6 @@ a:hover {
 }
 .text-block__title {
   margin-bottom: 24px;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 60px;
-  letter-spacing: -1px;
 }
 .text-block__desc {
   font-family: Montserrat;
@@ -159,9 +173,6 @@ a:hover {
   font-style: normal;
   font-weight: 500;
   line-height: 152%;
-}
-.text-block_color {
-  color: #2E363E;
 }
 .text-block__list {
   display: flex;
@@ -194,14 +205,7 @@ a:hover {
 .catalog__title {
   text-align: center;
   color: #2E363E;
-  font-feature-settings: "clig" off, "liga" off;
-  /* Заголовки / 48 px, Medium */
-  font-family: Montserrat;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 500;
   line-height: 60px;
-  /* 125% */
   letter-spacing: -1px;
   margin-bottom: 80px;
 }
@@ -287,19 +291,19 @@ a:hover {
 }
 .content__body {
   display: flex;
+  flex-wrap: wrap;
   z-index: 5;
   position: relative;
-}
-.content__text-block {
-  flex: 0 1 50%;
-  padding: 439px 0 459px 84px;
+  padding-top: 15%;
+  align-items: center;
+  justify-content: center;
 }
 .content__text-block .text-block {
-  max-width: 500px;
+  max-width: 481px;
+  width: 100%;
 }
 .content__picture {
-  flex: 0 1 50%;
-  background: url(../img/content/phone.png) no-repeat center/contain;
+  max-width: 481px;
 }
 
 .about__content {
@@ -389,10 +393,6 @@ a:hover {
 }
 .comment__title {
   color: #FFF;
-  font-family: Montserrat;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 500;
   line-height: 60px;
   letter-spacing: -1px;
   margin-bottom: 80px;
@@ -481,8 +481,6 @@ a:hover {
   font-family: Montserrat;
 }
 .gallery__title {
-  font-size: 48px;
-  font-weight: 500;
   line-height: 60px;
   letter-spacing: -1px;
   margin-bottom: 14px;
@@ -498,6 +496,9 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+.gallery__item-link:hover {
+  border-radius: 5px;
+}
 
 .order {
   background: #081130;
@@ -511,8 +512,6 @@ a:hover {
   background: #FFF;
 }
 .order__title {
-  font-size: 36px;
-  font-weight: 700;
   line-height: 133%;
   margin-bottom: 12px;
 }
@@ -602,9 +601,6 @@ a:hover {
   .about__text-block .text-block__list {
     width: 100%;
   }
-  .content__text-block {
-    padding: 139px 0 139px 84px;
-  }
   .about__content {
     gap: 30px;
     justify-content: center;
@@ -629,5 +625,42 @@ a:hover {
   }
   .woman::after, .woman::before {
     left: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .title {
+    font-family: Montserrat;
+  }
+  .title_xl {
+    font-size: 36px;
+    font-weight: 700;
+  }
+  .title_l {
+    font-size: 36px;
+    font-weight: 500;
+  }
+  .title_m {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .contact-block svg {
+    width: 20px;
+    height: 20px;
+  }
+  .contact-block__text {
+    font-size: 15px;
+  }
+  .content__text-block .text-block {
+    max-width: unset;
+  }
+  .text-block {
+    text-align: center;
+  }
+  .hero-section {
+    padding: 200px 0;
+  }
+  .hero-section__content {
+    max-width: 500px;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=styles.css.map */
