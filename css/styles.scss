@@ -521,6 +521,7 @@ a {
     text-align: center;
     color: #2E363E;
     font-family: Montserrat;
+    
     &__title {
         font-size: 48px;
         font-weight: 500;
@@ -535,14 +536,105 @@ a {
         margin-bottom: 80px;
     }
     &__list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 9px;
-        justify-content: center;
         list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
+.order {
+    background: #081130;
+    color: #2E363E;
+    font-family: Montserrat;
+    &__content {
+        text-align: center;
+        padding: 70px 99px;
+        border-radius: 8px;
+        background:  #FFF;
+    }
+    &__title {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 133%;
+        margin-bottom: 12px;
+    }
+    &__subtitle {
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 143%;
+        letter-spacing: -0.2px;
+        margin-bottom: 36px;
+    }
+    &__form {
+        margin-bottom: 24px;
+    }
+}
+
+.form-order {
+    font-family: Montserrat;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    &__input {
+        color: #7E868E;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 160%;
+        border-radius: 8px;
+        width: 100%;
+        max-width: 380px;
+        padding: 30px 0px 29px 58px;
+        background: url(../img/Phone.svg) no-repeat;
+        background-position: 7% 51%;
+        background-color: #F2F6FA;
+    }
+    &__btn {
+        color:  #2E363E;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 152%;
+        padding: 29px 0px;
+        border-radius: 8px;
+        background:  #FED84C;
+        width: 100%;
+        max-width: 380px;
+    }
+}
+
+.form-checkbox {
+    font-size: 11px;
+    &__link {
+        text-decoration: revert;
+        &:hover {
+            color: #2580d5;
+        }
+    }
+}
+
+.footer {
+    text-align: center;
+    background: #081130;
+    color:  #7E868E;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+    padding: 80px 0;
+    &__list {
+        list-style: none;
+        margin-bottom: 22px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 43px;
+        justify-content: center;
+    }
+    &__item-link {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
 @media screen and (max-width: 1024px) {
     .catalog {
         &__list {
