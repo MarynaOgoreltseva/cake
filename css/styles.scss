@@ -302,9 +302,10 @@ a {
         flex-wrap: wrap;
         z-index: 5;
         position: relative;
-        padding-top: 15%;
+        padding: 15% 0;
         align-items: center;
         justify-content: center;
+        gap: 20px;
     }
     &__text-block {
         // flex: 0 1 50%;
@@ -642,46 +643,38 @@ a {
     }
 }
 @media screen and (max-width: 1024px) {
+    .hero-section {
+        padding: 207px 0 365px 0;
+    }
     .catalog {
         &__list {
             justify-content: center;
+            gap: 15px;
         }
     }
     .about {
         &__content {
+            gap: 30px;
             justify-content: center;
         }
         &__text-block .text-block__list {
             width: 100%;
         }
-    }
-
-
-.about {
-    &__content{
-        gap: 30px;
-        justify-content: center;
-    }
- 
-    &__text-block {
-        flex: 0 1 100%;
-    }
-    &__woman {
-        flex: 0 1 100%;
-        & .woman__ellipse {
-            left: -40px;
+        &__text-block {
+            flex: 0 1 100%;
+        }
+        &__woman {
+            flex: 0 1 100%;
+            & .woman__ellipse {
+                left: -40px;
+            }
         }
     }
-}
-}
-
-
-
-@media screen and (max-width: 1110px) {
     .woman {
         &__pic {
             left: 0;
         }
+
         &__ellipse {
             max-width: 580px;
             width: 100%;
@@ -691,7 +684,19 @@ a {
             left: 0px;
         }
     }
+    .item-catalog {
+        &__body {
+            padding: 30px 24px;
+        }
+    }
+    .comment {
+        &__body {
+            padding: 40px;
+            justify-content: center;
+        }
+    }
 }
+
 
 @media screen and (max-width: 768px) {
     .title {
@@ -727,10 +732,24 @@ a {
         text-align: center;
     }
     .hero-section {
-        padding: 200px 0;
-        &__content {
-        max-width: 500px;
-        margin: 0 auto; 
-        }       
+        padding: 200px 0;     
     }
+    .hero__content,
+    .content__text-block,
+    .about__text-block {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .about {
+    & .text-block {
+        text-align: unset;
+    }
+}
+}
+
+@media screen and (max-width: 480px) {
+    .about__woman .woman__ellipse {
+            left: unset;
+        }
+
 }
