@@ -1,0 +1,1 @@
+$('.comment__list').slick();

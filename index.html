@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cake-page</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
 </head>
@@ -341,38 +343,104 @@
                         <div class="comment__title title title_l">
                             Почитайте отзывы довольных клиентов
                         </div>
-                        <div class="comment__body">
-                            <div class="comment__review">
-                                <div class="review-comment">
-                                    <div class="review-comment__svg">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                                            <g opacity="0.9">
-                                                <path
-                                                    d="M8.78049 15.9902C13.6083 15.9902 17.522 19.904 17.522 24.7317C17.522 29.5594 13.6083 33.4732 8.78049 33.4732C3.9527 33.4732 0.0390244 29.5594 0.0390244 24.7317L0 23.4829C0 13.8274 7.82736 6 17.4829 6V10.9951C14.1474 10.9951 11.0114 12.2941 8.65272 14.6527C8.19871 15.1068 7.78435 15.5899 7.41058 16.0974C7.85694 16.0272 8.31438 15.9902 8.78049 15.9902ZM31.2585 15.9902C36.0862 15.9902 40 19.904 40 24.7317C40 29.5594 36.0862 33.4732 31.2585 33.4732C26.4308 33.4732 22.5171 29.5594 22.5171 24.7317L22.478 23.4829C22.478 13.8274 30.3053 6 39.961 6V10.9951C36.6255 10.9951 33.4893 12.2941 31.1308 14.6527C30.6767 15.1068 30.2623 15.5899 29.8885 16.0974C30.3349 16.0272 30.7924 15.9902 31.2585 15.9902Z"
-                                                    fill="#5D6AFB" />
-                                            </g>
-                                        </svg>
+                        <div class="comment__list">
+                            <div class="comment__item">
+                                <div class="comment__review">
+                                    <div class="review-comment">
+                                        <div class="review-comment__svg">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                                <g opacity="0.9">
+                                                    <path
+                                                        d="M8.78049 15.9902C13.6083 15.9902 17.522 19.904 17.522 24.7317C17.522 29.5594 13.6083 33.4732 8.78049 33.4732C3.9527 33.4732 0.0390244 29.5594 0.0390244 24.7317L0 23.4829C0 13.8274 7.82736 6 17.4829 6V10.9951C14.1474 10.9951 11.0114 12.2941 8.65272 14.6527C8.19871 15.1068 7.78435 15.5899 7.41058 16.0974C7.85694 16.0272 8.31438 15.9902 8.78049 15.9902ZM31.2585 15.9902C36.0862 15.9902 40 19.904 40 24.7317C40 29.5594 36.0862 33.4732 31.2585 33.4732C26.4308 33.4732 22.5171 29.5594 22.5171 24.7317L22.478 23.4829C22.478 13.8274 30.3053 6 39.961 6V10.9951C36.6255 10.9951 33.4893 12.2941 31.1308 14.6527C30.6767 15.1068 30.2623 15.5899 29.8885 16.0974C30.3349 16.0272 30.7924 15.9902 31.2585 15.9902Z"
+                                                        fill="#5D6AFB" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div class="review-comment__text-title">
+                                            111«Результат дико порадовал, друзья были в восторге»
+                                        </div>
+                                        <div class="review-comment__text-desc">
+                                            «Заказала капкейки, как подарок на новый год. Делать заказ было легко и приятно, ну а результат дико
+                                            порадовал,
+                                            друзья
+                                            были в восторге. И оформление, и на вкус капкейки были просто замечательные. Обязательно буду заказывать
+                                            еще Уже
+                                            строю планы, чтобы попробовать все начинки. Они восхитительны! Даже кушать было жалко, такая красота!
+                                        </div>
+                                        <a href="#" class="review-comment__text-link">Читать отзыв полностью</a>
+                            
                                     </div>
-                                    <div class="review-comment__text-title">
-                                        «Результат дико порадовал, друзья были в восторге»
+                                </div>
+                                <div class="comment__photo-block">
+                                    <img src="img/comment/woman.png" alt="" class="comment__pic">
+                                    <div class="comment__user-name">Ирина Ларионова</div>
+                                    <div class="comment__user-city">Днепр</div>
+                                </div>
+                            </div><div class="comment__item">
+                                <div class="comment__review">
+                                    <div class="review-comment">
+                                        <div class="review-comment__svg">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                                <g opacity="0.9">
+                                                    <path
+                                                        d="M8.78049 15.9902C13.6083 15.9902 17.522 19.904 17.522 24.7317C17.522 29.5594 13.6083 33.4732 8.78049 33.4732C3.9527 33.4732 0.0390244 29.5594 0.0390244 24.7317L0 23.4829C0 13.8274 7.82736 6 17.4829 6V10.9951C14.1474 10.9951 11.0114 12.2941 8.65272 14.6527C8.19871 15.1068 7.78435 15.5899 7.41058 16.0974C7.85694 16.0272 8.31438 15.9902 8.78049 15.9902ZM31.2585 15.9902C36.0862 15.9902 40 19.904 40 24.7317C40 29.5594 36.0862 33.4732 31.2585 33.4732C26.4308 33.4732 22.5171 29.5594 22.5171 24.7317L22.478 23.4829C22.478 13.8274 30.3053 6 39.961 6V10.9951C36.6255 10.9951 33.4893 12.2941 31.1308 14.6527C30.6767 15.1068 30.2623 15.5899 29.8885 16.0974C30.3349 16.0272 30.7924 15.9902 31.2585 15.9902Z"
+                                                        fill="#5D6AFB" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div class="review-comment__text-title">
+                                            222«Супер! в восторге»
+                                        </div>
+                                        <div class="review-comment__text-desc">
+                                            « Делать заказ было легко и приятно, ну а результат дико
+                                            порадовал,
+                                            друзья
+                                            были в восторге. И оформление, и на вкус капкейки были просто замечательные. Обязательно буду заказывать
+                                            еще Уже
+                                            строю планы, чтобы попробовать все начинки. Они восхитительны! Даже кушать было жалко, такая красота!
+                                        </div>
+                                        <a href="#" class="review-comment__text-link">Читать отзыв полностью</a>
+                            
                                     </div>
-                                    <div class="review-comment__text-desc">
-                                        «Заказала капкейки, как подарок на новый год. Делать заказ было легко и приятно, ну а результат дико порадовал,
-                                        друзья
-                                        были в восторге. И оформление, и на вкус капкейки были просто замечательные. Обязательно буду заказывать еще Уже
-                                        строю планы, чтобы попробовать все начинки. Они восхитительны! Даже кушать было жалко, такая красота!
+                                </div>
+                                <div class="comment__photo-block">
+                                    <img src="img/comment/woman.png" alt="" class="comment__pic">
+                                    <div class="comment__user-name">Ангела Ларионова</div>
+                                    <div class="comment__user-city">Харьков</div>
+                                </div>
+                            </div><div class="comment__item">
+                                <div class="comment__review">
+                                    <div class="review-comment">
+                                        <div class="review-comment__svg">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                                <g opacity="0.9">
+                                                    <path
+                                                        d="M8.78049 15.9902C13.6083 15.9902 17.522 19.904 17.522 24.7317C17.522 29.5594 13.6083 33.4732 8.78049 33.4732C3.9527 33.4732 0.0390244 29.5594 0.0390244 24.7317L0 23.4829C0 13.8274 7.82736 6 17.4829 6V10.9951C14.1474 10.9951 11.0114 12.2941 8.65272 14.6527C8.19871 15.1068 7.78435 15.5899 7.41058 16.0974C7.85694 16.0272 8.31438 15.9902 8.78049 15.9902ZM31.2585 15.9902C36.0862 15.9902 40 19.904 40 24.7317C40 29.5594 36.0862 33.4732 31.2585 33.4732C26.4308 33.4732 22.5171 29.5594 22.5171 24.7317L22.478 23.4829C22.478 13.8274 30.3053 6 39.961 6V10.9951C36.6255 10.9951 33.4893 12.2941 31.1308 14.6527C30.6767 15.1068 30.2623 15.5899 29.8885 16.0974C30.3349 16.0272 30.7924 15.9902 31.2585 15.9902Z"
+                                                        fill="#5D6AFB" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div class="review-comment__text-title">
+                                            333«друзья были в восторге»
+                                        </div>
+                                        <div class="review-comment__text-desc">
+                                            «
+                                            были в восторге. И оформление, и на вкус капкейки были просто замечательные. Обязательно буду заказывать
+                                            еще Уже
+                                            строю планы, чтобы попробовать все начинки. Они восхитительны! Даже кушать было жалко, такая красота!
+                                        </div>
+                                        <a href="#" class="review-comment__text-link">Читать отзыв полностью</a>
+                            
                                     </div>
-                                    <a href="#" class="review-comment__text-link">Читать отзыв полностью</a>
-
+                                </div>
+                                <div class="comment__photo-block">
+                                    <img src="img/comment/woman.png" alt="" class="comment__pic">
+                                    <div class="comment__user-name">Ванесса Ларионова</div>
+                                    <div class="comment__user-city">Запорожье</div>
                                 </div>
                             </div>
-                            <div class="comment__photo-block">
-                                <img src="img/comment/woman.png" alt="" class="comment__pic">
-                                <div class="comment__user-name">Ирина Ларионова</div>
-                                <div class="comment__user-city">Днепр</div>
-                            </div>
                         </div>
-                        <div class="comment__arrow-list">
+                        <!-- <div class="comment__arrow-list">
                             <svg xmlns="http://www.w3.org/2000/svg" width="156" height="66" viewBox="0 0 156 66" fill="none">
                                 <rect x="0.0722656" width="66" height="66" rx="33" fill="#FED84C" />
                                 <path d="M36.106 22.7062L25.7401 33.072L36.106 43.4379" stroke="#2E363E" stroke-width="4" stroke-linecap="round" />
@@ -382,7 +450,7 @@
                             </svg>
                             <!-- <div class="comment__arrow-item comment__arrow-item_left"></div>
                             <div class="comment__arrow-item comment__arrow-item_right"></div> -->
-                        </div>                        
+                        <!-- </div>                         --> 
                     </div>
                 </div>
             <div class="comment__bg-bottom-img">
@@ -502,5 +570,11 @@
             </div>
         </div>
     </footer>
+    // jquery
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    
+    // slick.min.js
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/js.js"></script>
 </body>
 </html>

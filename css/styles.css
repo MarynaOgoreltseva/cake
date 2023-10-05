@@ -399,8 +399,12 @@ a:hover {
   margin-bottom: 80px;
   text-align: center;
 }
-.comment__body {
-  padding: 70px 143px;
+.comment__list {
+  display: flex;
+  gap: 50px;
+}
+.comment__item {
+  padding: 70px 80px;
   display: flex;
   flex-wrap: wrap;
   gap: 54px;
@@ -408,7 +412,7 @@ a:hover {
   border: 2px solid #E2EAF2;
   background: #FFF;
   box-shadow: 2px 8px 16px 0px rgba(194, 198, 208, 0.06);
-  margin-bottom: 70px;
+  margin-bottom: 170px;
 }
 .comment__review {
   max-width: 460px;
@@ -629,7 +633,7 @@ a:hover {
   .item-catalog__body {
     padding: 30px 24px;
   }
-  .comment__body {
+  .comment__item {
     padding: 40px;
     justify-content: center;
   }
@@ -660,9 +664,6 @@ a:hover {
   .content__text-block .text-block {
     max-width: unset;
   }
-  .text-block {
-    text-align: center;
-  }
   .hero-section {
     padding: 200px 0;
   }
@@ -674,6 +675,9 @@ a:hover {
   }
   .about .text-block {
     text-align: unset;
+  }
+  .item-catalog {
+    max-width: 350px;
   }
 }
 @media screen and (max-width: 480px) {

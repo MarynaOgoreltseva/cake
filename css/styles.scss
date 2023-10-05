@@ -424,9 +424,14 @@ a {
         margin-bottom: 80px;
         text-align: center;
     }
+    &__list {
+        display: flex;
+        gap: 50px;
+    }
 
-    &__body {
-        padding: 70px 143px;
+    &__item {
+        // padding: 70px 143px;
+        padding: 70px 80px;
         display: flex;
         flex-wrap: wrap;
         gap: 54px;
@@ -434,7 +439,8 @@ a {
         border: 2px solid #E2EAF2;
         background: #FFF;
         box-shadow: 2px 8px 16px 0px rgba(194, 198, 208, 0.06);
-        margin-bottom: 70px;
+        // margin-bottom: 70px;
+        margin-bottom: 170px;
     }
 
     &__review {
@@ -690,7 +696,7 @@ a {
         }
     }
     .comment {
-        &__body {
+        &__item {
             padding: 40px;
             justify-content: center;
         }
@@ -728,9 +734,9 @@ a {
     .content__text-block .text-block {
         max-width: unset;
     }
-    .text-block {
-        text-align: center;
-    }
+    // .text-block {
+    //     text-align: center;
+    // }
     .hero-section {
         padding: 200px 0;     
     }
@@ -745,6 +751,9 @@ a {
         text-align: unset;
     }
 }
+    .item-catalog {
+        max-width: 350px;
+    }
 }
 
 @media screen and (max-width: 480px) {
