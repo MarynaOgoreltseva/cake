@@ -383,14 +383,14 @@ a {
         position: absolute;
         &_nos {
             top: 0;
-            left: 50px;
+            left: 10%;
             z-index: 3;
             max-width: 487px;
                 height: 652px;
         }
         &_nonos {
             bottom: 42px;
-                left: 50px;
+                left: 10%;
                 z-index: 2;
                 max-width: 487px;
                 height: 439px;
@@ -671,15 +671,15 @@ a {
         }
         &__woman {
             flex: 0 1 100%;
-            & .woman__ellipse {
-                left: -40px;
-            }
+            // & .woman__ellipse {
+            //     left: -40px;
+            // }
         }
     }
     .woman {
-        &__pic {
-            left: 0;
-        }
+        // &__pic {
+        //     left: 0;
+        // }
 
         &__ellipse {
             max-width: 580px;
@@ -760,5 +760,15 @@ a {
     .about__woman .woman__ellipse {
             left: unset;
         }
-
+    .order__content {
+        padding: 70px 20px; 
+    }
+        .woman {
+        &__pic {
+            left: 0;
+        }
+        &__pic_nos {
+            left: 0;
+        }
+    }
 }
